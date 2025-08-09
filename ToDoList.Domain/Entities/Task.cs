@@ -13,6 +13,6 @@ namespace ToDoList.Domain.Entities
         public string TaskDescription { get; set; }
         public int TaskPriority { get; set; }
         public string State { get; set; }
-        public bool IsRemoved { get; set; }
+        public bool IsDeleted { get; set; }
     }
 }
