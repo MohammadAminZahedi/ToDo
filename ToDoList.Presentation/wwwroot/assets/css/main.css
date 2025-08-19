@@ -1,0 +1,165 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.container {
+    max-width: 900px;
+}
+
+/* side bar */
+.sidebar {
+    min-width: fit-content;
+    height: 100vh;
+    background: #2f3640;
+    color: #f5f6fa;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+   
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fbc531;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 12px 0;
+    border-radius: .5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #dcdde1;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+    background: #444850;
+    
+}
+
+.done-menu {
+    border-left: .3rem #90be6d solid;
+    border-width: 0;
+}
+
+.done-menu a:hover {
+    color: #90be6d;
+}
+
+.postponed-menu {
+    border-left: .3rem #f9c74f solid;
+    border-width: 0;
+}
+
+.postponed-menu a:hover {
+    color: #f9c74f;
+}
+
+.canceled-menu {
+    border-left: .3rem #f94144 solid;
+    border-width: 0;
+}
+
+.canceled-menu a:hover {
+    color: #f94144;
+}
+
+.menu-active {
+    border-width: .3rem;
+}
+
+/* task section */
+.task-section {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    padding: 1rem 2rem;
+}
+
+/* add task section */
+.add-task {
+    flex-wrap: nowrap;
+}
+
+.add-task select {
+    max-width: 20%;
+    min-width: 100px;
+}
+
+.add-task button {
+    min-width: max-content;
+
+}
+
+/* task items */
+.done {
+    background-color: #98d67988 !important;
+    text-decoration: line-through;
+}
+
+.tasks {
+    margin-top: 30px;
+}
+
+.task-time {
+    font-size: xx-small;
+}
+
+.task-item {
+    background-color: rgb(238, 238, 238);
+    padding: .7rem;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    transition: .3s;
+}
+
+.priority-high {
+    border-left: .8rem #f94144 solid;
+    border-right: .3rem #f94144 solid;
+}
+
+.priority-low {
+    border-left: .8rem #90be6d solid;
+    border-right: .3rem #90be6d solid;
+
+}
+
+.priority-medium {
+    border-left: .8rem #f9c74f solid;
+    border-right: .3rem #f9c74f solid;
+
+}
+
+.postpone-btn {
+    width: auto;
+}
+
+.cancel-btn {
+    width: auto;
+}
+

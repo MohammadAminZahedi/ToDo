@@ -1,0 +1,40 @@
+﻿<section class="task-section mx-auto">
+    <h2>To Do List</h2>
+    <div class="add-task">
+        <form action="" class="">
+            <div class="d-flex align-items-center">
+                <input placeholder="title ..." type="text" class="form-control" id="task-title" name="">
+                <select class="form-select mx-3">
+                    <option selected value="0">Priority</option>
+                    <option value="1">Low 🟢</option>
+                    <option value="2">Medium 🟠</option>
+                    <option value="3">High 🔴</option>
+                </select>
+                <button class="btn btn-primary">Add task</button>
+            </div>
+
+        </form>
+    </div>
+    <div class="tasks">
+        <ul>
+            <li class="priority-high task-item d-flex justify-content-between align-items-center">
+                <span class="d-block">Task title</span>
+                <span class="task-time d-block text-muted">2025/12/8 20:30</span>
+                <div>
+                    <button class="postpone-btn btn btn-sm btn-warning mx-2">Postpone ⏳</button>
+                    <button class="cancel-btn btn btn-sm btn-danger mx-2">Cancel 🗑️</button>
+                </div>
+            </li>
+
+            <li class="priority-low task-item d-flex justify-content-between align-items-center">
+                <span class="d-block">Task title</span>
+                <span class="task-time d-block text-muted">2025/12/8 20:30</span>
+                <div>
+                    <button class="postpone-btn btn btn-sm btn-warning mx-2">Postpone ⏳</button>
+                    <button class="cancel-btn btn btn-sm btn-danger mx-2">Cancel 🗑️</button>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</section>
