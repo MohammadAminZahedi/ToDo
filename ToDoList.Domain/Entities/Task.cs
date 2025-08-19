@@ -10,9 +10,7 @@ namespace ToDoList.Domain.Entities
     {
         public string TaskId { get; set; }
         public string TaskTitle { get; set; }
-        public string TaskDescription { get; set; }
         public int TaskPriority { get; set; }
         public string State { get; set; }
-        public bool IsDeleted { get; set; }
     }
 }

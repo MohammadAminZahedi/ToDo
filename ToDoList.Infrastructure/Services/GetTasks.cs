@@ -21,12 +21,11 @@ namespace ToDoList.Infrastructure.Services
         public IEnumerable<TaskDto> GetTasksByState(TaskState state)
         {
             var tasks = _context.Tasks
-                .Where(t => t.State == state.ToString() && t.IsDeleted == false)
+                .Where(t => t.State == state.ToString())
                 .Select(t => new TaskDto()
                 {
                     TaskId = t.TaskId,
                     TaskTitle = t.TaskTitle,
-                    TaskDescription = t.TaskDescription,
                     Created = t.Created,
                     Modified = t.Modified,
                     State=Enum.Parse<TaskState>(t.State),

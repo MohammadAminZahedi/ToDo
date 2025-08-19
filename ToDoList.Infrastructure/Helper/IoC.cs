@@ -18,8 +18,6 @@ namespace ToDoList.Infrastructure.Helper
             #region Application Services
             //Task Services
             services.AddTransient<ICreateTask, CreateTask>();
-            services.AddTransient<IDeleteTask, DeleteTask>();
-            services.AddTransient<IRestoreTask, RestoreTask>();
             services.AddTransient<IRemoveTask, RemoveTask>();
             services.AddTransient<IGetTasks, GetTasks>();
             services.AddTransient<IEditTask, EditTask>();

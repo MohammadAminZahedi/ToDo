@@ -15,10 +15,8 @@ namespace ToDoList.Infrastructure.Mapping
     {
         public void Configure(EntityTypeBuilder<Task> builder)
         {
-            builder.Property(t => t.TaskDescription).IsRequired(false);
             builder.Property(t => t.TaskPriority).HasDefaultValue(3);
-            builder.Property(t => t.State).HasDefaultValue(TaskState.NotCompleted.ToString());
-            builder.Property(t => t.IsDeleted).HasDefaultValue(false);
+            builder.Property(t => t.State).HasDefaultValue(TaskState.ToDo.ToString());
         }
     }
 }

@@ -19,9 +19,9 @@ namespace ToDoList.Application.Common
 
     public enum TaskState
     {
-        Completed,
+        Done,
         Postponed,
-        NotCompleted,
-        Deleted
+        ToDo,
+        Canceled
     }
 }

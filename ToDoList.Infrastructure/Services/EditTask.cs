@@ -23,7 +23,6 @@ namespace ToDoList.Infrastructure.Services
             if (foundTask == null) return new ResultDto(false, TaskResults.NotFound);
 
             foundTask.TaskTitle = task.TaskTitle;
-            foundTask.TaskDescription = task.TaskDescription;
             foundTask.TaskPriority = task.TaskPriority;
 
             var stateChanges = _context.SaveChanges();

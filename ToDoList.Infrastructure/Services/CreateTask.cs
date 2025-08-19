@@ -25,7 +25,6 @@ namespace ToDoList.Infrastructure.Services
             {
                 TaskId = Guid.NewGuid().ToString(),
                 TaskTitle = task.TaskTitle,
-                TaskDescription = task.TaskDescription,
                 Created = DateTime.Now,
                 State = task.State.ToString(),
                 TaskPriority = task.TaskPriority
